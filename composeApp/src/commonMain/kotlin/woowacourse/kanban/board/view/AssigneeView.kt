@@ -3,6 +3,8 @@ package woowacourse.kanban.board.view
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.AccountCircle
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -11,9 +13,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import kanbanboard.composeapp.generated.resources.Res
-import kanbanboard.composeapp.generated.resources.account_circle_icon
-import org.jetbrains.compose.resources.painterResource
 import woowacourse.kanban.board.design.FontSize
 import woowacourse.kanban.board.model.Assignee
 
@@ -21,7 +20,7 @@ import woowacourse.kanban.board.model.Assignee
 fun AssigneeView(assignee: Assignee) {
     Row(modifier = Modifier.padding(8.dp), verticalAlignment = Alignment.CenterVertically) {
         Icon(
-            painter = painterResource(Res.drawable.account_circle_icon),
+            imageVector = Icons.Default.AccountCircle,
             contentDescription = "사용자 기본 이미지",
         )
         Spacer(modifier = Modifier.padding(4.dp))
