@@ -8,13 +8,13 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import woowacourse.kanban.board.model.Description
-import woowacourse.kanban.board.design.FontSize
+import woowacourse.kanban.board.design.Font
 
 @Composable
 fun DescriptionView(description: Description) {
     Text(
         text = description.text,
-        fontSize = FontSize.DESCRIPTION.size,
+        fontSize = Font.DESCRIPTION.size,
         overflow = TextOverflow.Ellipsis,
         maxLines = 2,
         modifier = Modifier.padding(8.dp),

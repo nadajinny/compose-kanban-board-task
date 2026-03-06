@@ -9,13 +9,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import woowacourse.kanban.board.design.ColorPalette
 import woowacourse.kanban.board.model.Tag
-import woowacourse.kanban.board.design.FontSize
+import woowacourse.kanban.board.design.Font
 
 @Composable
 fun TagView(tag: Tag) {
     Text(
         text = tag.text,
-        fontSize = FontSize.TAG.size,
+        fontSize = Font.TAG.size,
         modifier = Modifier.background(ColorPalette.LighterGray, RoundedCornerShape(10.dp)).padding(4.dp),
     )
 }

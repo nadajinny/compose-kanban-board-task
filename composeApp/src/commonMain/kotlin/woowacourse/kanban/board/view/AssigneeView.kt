@@ -10,10 +10,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import woowacourse.kanban.board.design.FontSize
+import woowacourse.kanban.board.design.Font
 import woowacourse.kanban.board.model.Assignee
 
 @Composable
@@ -26,8 +25,8 @@ fun AssigneeView(assignee: Assignee) {
         Spacer(modifier = Modifier.padding(4.dp))
         Text(
             text = assignee.name,
-            fontSize = FontSize.ASSIGNEE.size,
-            fontWeight = FontWeight.Bold,
+            fontSize = Font.ASSIGNEE.size,
+            fontWeight = Font.ASSIGNEE.weight,
             overflow = TextOverflow.Ellipsis, maxLines = 1,
         )
     }
