@@ -1,4 +1,4 @@
-package woowacourse.kanban.board.view
+package woowacourse.kanban.board.ui
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.FlowRow

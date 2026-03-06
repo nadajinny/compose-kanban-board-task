@@ -1,4 +1,4 @@
-package woowacourse.kanban.board.view
+package woowacourse.kanban.board.ui
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
@@ -16,7 +16,18 @@ import androidx.compose.ui.unit.dp
 import woowacourse.kanban.board.model.Assignee
 import woowacourse.kanban.board.model.Description
 import woowacourse.kanban.board.model.TagGroup
+import woowacourse.kanban.board.model.TaskCard
 import woowacourse.kanban.board.model.Title
+
+@Composable
+fun TaskCardView(taskCard: TaskCard) {
+    TaskCardView(
+        title = Title(taskCard.title),
+        description = Description(taskCard.description),
+        tagGroup = TagGroup(tags = taskCard.tags),
+        assignee = Assignee(name = taskCard.assignee),
+    )
+}
 
 @Composable
 fun TaskCardView(
