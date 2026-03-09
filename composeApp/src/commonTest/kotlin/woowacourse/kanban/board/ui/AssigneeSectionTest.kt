@@ -46,7 +46,7 @@ class AssigneeSectionTest {
 
     @Test
     fun `담당자 뷰는 긴 이름을 한 줄로 표시한다`() = runComposeUiTest {
-        val longName = "너무너무너무 긴 담당자도 한 줄이지만 노출되고 말줄임표로 처리합니"
+        val longName = "너무너무너무 긴 담당자도 한 줄이지만 노출되고 말줄임표로 처리합니 다"
         val assignee = Assignee(longName)
 
         setContent {
