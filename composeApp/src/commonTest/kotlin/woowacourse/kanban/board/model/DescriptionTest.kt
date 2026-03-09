@@ -15,11 +15,11 @@ class DescriptionTest {
     @Test
     fun `빈 공란으로도 isEmpty()가 true가 된다`() {
         val description = Description("")
-        assertTrue(description.isEmpty())
+        assertTrue(description.isBlank())
     }
     @Test
     fun `공백 한 칸으로도 isEmpty()가 true가 된다`() {
         val description = Description(" ")
-        assertTrue(description.isEmpty())
+        assertTrue(description.isBlank())
     }
 }
