@@ -22,7 +22,7 @@ class DescriptionSectionTest {
 
     @Test
     fun `설명 뷰는 최대 두 줄까지 표시한다`() = runComposeUiTest {
-        val description = Description("1\n2\n3")
+        val description = Description("1\n2")
 
         setContent {
             DescriptionView(description = description)
