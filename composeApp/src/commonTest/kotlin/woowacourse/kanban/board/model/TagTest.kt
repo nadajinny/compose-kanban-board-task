@@ -7,7 +7,7 @@ class TagTest {
     @Test
     fun `태그 텍스트가 공란일 수 없다`() {
         assertFailsWith<IllegalArgumentException> {
-            Tag("")
+            Tag(" ")
         }
     }
 
