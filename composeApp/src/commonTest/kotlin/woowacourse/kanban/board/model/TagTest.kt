@@ -21,7 +21,7 @@ class TagTest {
     @Test
     fun `태그 텍스트가 5글자를 초과하면 에러가 발생한다`() {
         assertFailsWith<IllegalArgumentException> {
-            Tag("엄청긴글자")
+            Tag("엄청긴글자입니다")
         }
     }
 }
